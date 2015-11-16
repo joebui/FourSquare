@@ -1,11 +1,11 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class Actions {
-    private Functions f;
-    private Interface i;
+public class Controller {
+    private Model f;
+    private View i;
 
-    public Actions(Functions f, Interface i) {
+    public Controller(Model f, View i) {
         this.f = f;
         this.i = i;
 

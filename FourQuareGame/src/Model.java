@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
 
-public class Functions {
+public class Model {
     Cell[][] c = new Cell[12][12];
     private byte mode;
     private byte whoseTurn = 1;
@@ -19,7 +19,7 @@ public class Functions {
     JLabel p2Score = new JLabel();
     JTextField stt = new JTextField();
 
-    public Functions() {
+    public Model() {
         for (byte i = 0; i < c.length; i++) {
             for (byte j = 0; j < c[i].length; j++) {
                 c[i][j] = new Cell();
@@ -220,6 +220,7 @@ public class Functions {
         }
         p1Score.setText("0");
         p2Score.setText("0");
+        whoseTurn = 1;
     }
 
     public byte computeScore(byte s) {

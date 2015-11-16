@@ -1,10 +1,8 @@
-import javax.swing.*;
-
 public class Game {
     public static void main(String[] args) {
-        Functions f = new Functions();
-        Interface i = new Interface(f);
-        Actions a = new Actions(f, i);
+        Model f = new Model();
+        View i = new View(f);
+        Controller a = new Controller(f, i);
 
         i.setVisible(true);
     }

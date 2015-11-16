@@ -1,11 +1,9 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
 import javax.swing.*;
-import javax.swing.border.LineBorder;
-import javax.swing.text.Position;
 
-public class Interface extends JFrame {
-    private Functions f;
+public class View extends JFrame {
+    private Model f;
 
     Image d1 = new ImageIcon("images/dia1.jpg").getImage();
     Image d2 = new ImageIcon("images/dia2.jpg").getImage();
@@ -37,7 +35,7 @@ public class Interface extends JFrame {
     JPanel p2Info = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
     JButton quit = new JButton("Quit game");
 
-    public Interface(Functions f) {
+    public View(Model f) {
         this.f = f;
         JLabel title = new JLabel("FourSquare");
         title.setFont(new Font("ALGERIAN", Font.BOLD, 26));
